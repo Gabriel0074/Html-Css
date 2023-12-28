@@ -1,0 +1,29 @@
+body{
+   text-align: center;
+  
+}
+h1{
+   color: black;
+}
+p{
+   color: black;
+}
+ul{
+   image-orientation: from-image;
+  background-position: center;
+   text-align: left;
+}
+h2{
+   color: black;
+}
+li{
+   color: black
+   ;
+}
+ol{
+   text-align: right;
+   
+}
+a{color: black;
+
+}
