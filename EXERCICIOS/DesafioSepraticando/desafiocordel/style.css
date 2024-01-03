@@ -1,0 +1,125 @@
+@charset "UTF-8" ;
+
+@font-face {
+   font-family:'titulo';
+   src: url(titulo/Simple\ Room.otf);
+  
+}
+
+@font-face {
+    font-family: 'paragrafo';
+    src: url(paragrafo/RobotoMono-BoldItalic.ttf);
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+}
+:root{
+    --cor1:#A52502;
+    --cor2:#390D02;
+    --cor3:#000B0D;
+    --cor4:#154B52;
+    --cor5:#1C8394;
+    --cor6:white;
+    --cor7:#390d02e7;
+}
+
+
+body{
+    min-height: 100vh;
+    background-color: rgb(199, 199, 199);
+
+}
+
+header{
+    color: var(--cor6);
+    background-color: var(--cor7);
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-size:4em;
+   font-family: 'titulo';
+    font-size: 8vw;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header> p > a{
+    color: white;
+    font-weight: bolder;
+}
+
+header > p > a:hover{
+    text-decoration: none;
+    font-family: 'titulo';
+}
+
+section{
+    padding-top:8vh;
+    padding-bottom: 8vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 1.5vw;
+}
+
+section > p{
+    padding-bottom: 2.5em;
+}
+
+.normal{
+    background-color:rgb(199, 199, 199);;
+    color: var(--cor2)
+
+}
+
+section > .img1{
+    color: white;
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section > .img2{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    color:black;
+}
+
+    
+p{
+    font-size: 1.2em;
+    font-family: 'paragrafo';
+}
+
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #390D02;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer > p > a{
+    font-family: 'paragrafo';
+    text-decoration: underline;
+    color: white;
+}
+
+footer > p > a:hover{
+    font-family: 'titulo';
+    background-color: #154B52; 
+}
