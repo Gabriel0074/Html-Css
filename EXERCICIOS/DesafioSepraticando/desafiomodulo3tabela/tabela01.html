@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela01</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+
+        body > a{
+              text-decoration: none;
+        }
+
+
+       a >  p{
+             width: 80px;
+             text-align: center;
+            border: 8px solid black;
+            border-radius: 6px ;
+            background-color: rgba(137, 43, 226, 0.212);
+        }
+       
+        
+
+       body >  a:hover{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(137, 43, 226, 0.212);
+
+        }
+      
+        table {
+            width: 400px;
+            height: 250px;
+        }
+
+        tr.coluna1 > td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        tr.coluna2 > td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        tr.coluna3 > td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        tr.coluna4 > td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        tr.coluna5 > td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>Tabela 01 do Desafio</h1>
+
+    <table>
+        <tr class="coluna1">
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+
+        <tr class="coluna2">
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+
+        <tr class="coluna3">
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+
+        <tr class="coluna4">
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+
+        <tr class="coluna5">
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+    
+    <a href="tabela02.html" ><p>Tabela2</p></a>
+    
+</body>
+</html>
