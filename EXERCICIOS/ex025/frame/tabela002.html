@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blanchedalmond;
+
+        }
+
+        tbody > tr:nth-child(2n){
+
+            background-color:lightgrey;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+            background-color: white;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead > tr{
+            border: 1px solid black;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:grey ;
+
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding:10px;
+            background-color: gray;
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+
+        .nm{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES 
+
+        TABLE 
+            THEAD
+                TR,TD,TH
+            TBODY
+              TR,TD,TH
+             TFOOT 
+              TR,TD,TH
+    -->
+
+    <Table>
+        <thead>
+            <th> Estado</th>
+            <th>População ( censo de 2022 )</th>
+            <th scope="col">População ( censo de 2010 )</th>
+    
+
+        </thead>
+
+        <tbody>
+            <caption>População das Unidades Federativas</caption>
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.webp" alt="logosaopaulo"> São Paulo</td>
+                
+                <td class ="nm">44 411 238</td>
+                <td class ="nm">41 262 199</td>
+            </tr>
+
+            <tr>
+                <td> <img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_de_Minas_Gerais.svg.webp" alt="logominas">  Minas Gerais</td>
+                
+                <td class ="nm">20 538 718</td>
+                <td class ="nm">19 597 330</td>
+            </tr>
+
+            <tr>
+                <td> <img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_estado_do_Rio_de_Janeiro.svg.webp" alt="logoriodejaneiro">  Rio de Janeiro</td>
+                
+                <td class ="nm">16 054 524</td>
+                <td class ="nm">15 989 929	</td>
+            </tr>
+
+            <tr>
+                <td> <img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_da_Bahia.svg.webp" alt="logobahia"> Bahia</td>
+                
+                <td class ="nm">14 141 626</td>
+                <td class ="nm">14 016 906</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_Paran%C3%A1.svg.webp" alt="logoparana">  Paraná</td>
+                
+                <td class ="nm">11 444 380	</td>
+                <td class ="nm">10 444 526</td>
+            </tr>
+
+            <tr>
+                <td><img src="c:\Users\petri\OneDrive\Área de Trabalho\bandeiras de estado\Bandeira_do_Rio_Grande_do_Sul.svg.png" alt="riogrande">  Rio Grande do Sul</td>
+                
+                <td class ="nm">10 882 965</td>
+                <td class ="nm">10 693 929</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_de_Pernambuco.svg.webp" alt="logopernambuco"> Pernambuco	</td>
+                
+                <td class ="nm">9 058 931</td>
+                <td class ="nm">8 796 448</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_Cear%C3%A1.svg.webp" alt="logoceara"> Ceará</td>
+                
+                <td class ="nm">8 794 957	</td>
+                <td class ="nm">8 452 381</td>
+            </tr>
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_Par%C3%A1.svg.webp" alt="logopara"> Pará</td>
+                <td class ="nm">8 121 025	</td>
+                <td class ="nm">7 581 051</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_de_Santa_Catarina.svg.webp" alt="logosantacatarina"> Santa Catarina</td>
+                <td class ="nm">7 610 361</td>
+                <td class ="nm">6 248 436</td>
+            </tr>
+
+            <tr>
+                <td><img src="c:\Users\petri\OneDrive\Área de Trabalho\bandeiras de estado\Flag_of_Goiás.svg.webp" alt="logogoias">Goiás</td>
+                <td class ="nm">7 056 495	</td>
+                <td class ="nm"nm>6 003 788</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_Maranh%C3%A3o.svg.webp" alt="logomaranhao"> Maranhão</td>
+                <td class ="nm">6 775 805</td>
+                <td class ="nm">6 574 789</td>
+            </tr>
+
+
+            <tr>
+                <td> <img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/20px-Bandeira_da_Para%C3%ADba.svg.webp" alt="paraiba"> Paraíba</td>
+                <td class="nm">3 974 687</td>
+                <td class="nm">3 766 528</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_Amazonas.svg.webp" alt="logoamazonas">  Amazonas</td>
+                <td class ="nm">3 941 613	</td>
+                <td class ="nm">3 483 985</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_Esp%C3%ADrito_Santo.svg.webp" alt="logoespiritosanto"> Espírito Santo</td>
+                <td class ="nm">3 833 712</td>
+                <td class ="nm">3 514 952</td>
+            </tr>
+
+            <tr>
+                <td> <img src="c:\Users\petri\OneDrive\Área de Trabalho\bandeiras de estado\Bandeira_de_Mato_Grosso.svg.webp" alt="logomatogrosso">Mato Grosso</td>
+                <td class="nm class="nm class= "nm""">3 658 649</td>
+                <td class="nm class="nm class= "nm""">3 035 122</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_Rio_Grande_do_Norte.svg.webp" alt="logoriograndedonorte">  Rio Grande do Norte</td>
+                <td class ="nm">3 302 729</td>
+                <td class ="nm">3 168 027	</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_Piau%C3%AD.svg.webp" alt="logopiaui"> 
+                    Piauí</td>
+                <td class="nm">3 272 199	</td>
+                <td class="nm">3 118 360	</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/20px-Bandeira_de_Alagoas.svg.webp" alt="logoalagoas"> Alagoas</td>
+                <td class ="nm">3 127 683</td>
+                <td class ="nm">3 120 494	</td>
+            </tr>
+
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_Distrito_Federal_(Brasil).svg.webp" alt="logodistritofederal"> Distrito Federal</td>
+                <td class="nm">2 817 381</td>
+                <td class="nm">2 570 160</td>
+            </tr>
+
+            <tr>
+                <td><img src="c:\Users\petri\OneDrive\Área de Trabalho\bandeiras de estado\Bandeira_de_Mato_Grosso_do_Sul.svg.png" alt="logomatogrosso"> Mato Grosso do Sul</td>
+                <td class ="nm">2 757 013	</td>
+                <td class ="nm">2 449 024</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_de_Sergipe.svg.webp" alt="lopgosergite"> Sergipe</td>
+                <td class ="nm">2 209 558</td>
+                <td class ="nm">2 068 017</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_de_Rond%C3%B4nia.svg.webp" alt="logorondonia"> Rondônia</td>
+                <td class="nm class= "nm"">1 581 196</td>
+                <td class="nm class= "nm"">1 562 409</td>
+            </tr>
+
+            <tr>
+                <td><img src="c:\Users\petri\OneDrive\Área de Trabalho\bandeiras de estado\Bandeira_do_Tocantins.svg.png" alt="logotocatins"> Tocantins</td>
+                <td class ="nm">1 511 460	</td>
+                <td class ="nm">1 383 445	</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_Acre.svg.webp" alt="logoacre"> Acre</td>
+                <td class= "nm">830 018</td>
+                <td class= "nm">733 559</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_do_Amap%C3%A1.svg.webp" alt="logoamapa"> Amapá</td>
+                <td class= "nm">733 759</td>
+                <td class= "nm">669 526</td>
+            </tr>
+
+            <tr>
+                <td><img src="file:///C:/Users/petri/OneDrive/%C3%81rea%20de%20Trabalho/bandeiras%20de%20estado/Bandeira_de_Roraima.svg.webp" alt="logororaima"> Roraima</td>
+                <td class ="nm">636 707</td>
+                <td class ="nm">450 479</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de Hanitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </Table>
+    
+</body>
+</html>
